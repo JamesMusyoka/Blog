@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Thank you for registering and sending your first POST.
+Enjoy

@@ -1,0 +1,22 @@
+{% macro displayComments(my_comments) %}
+{% for comment in my_comments %}
+
+  {{comment.c_content}}
+  {{comment.c_com_posted_on}}
+  
+
+{% endfor %} {% endmacro %}
+
+{% macro displayPitches(my_pitches) %}
+{% for pitch in my_pitches %}
+
+{{pitch.blogs_}}
+
+{{pitch.blogs_content}}
+Pitch posted on :{{pitch.blogs_posted_on}}
+  
+
+<a href="/comments/{{pitch.id}}">Leave feedback</a>
+ 
+{% endfor %}
+{% endmacro %}

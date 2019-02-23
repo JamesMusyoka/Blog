@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+
+{% block content %}
+
+
+  {{macro.displayPitches(pitches)}}
+
+
+
+  <h1>Quotes </h1>
+  <p>{{random.quote}}</p>
+
+{% endblock%}
