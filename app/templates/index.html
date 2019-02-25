@@ -1,11 +1,20 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
+
+{% block styles%}
+{{ super() }}
+
+{% endblock %}
+
+
 {% block content %}
-<body background-image="https://cdn.imprvimg.com/wp-content/uploads/2018/06/BusinessPlan-big-874x492.jpg">
+<body>
     <h1>WELCOME TO JAHYMO MZITO!!!!!</h1>
+    <img src="https://cdn.imprvimg.com/wp-content/uploads/2018/06/BusinessPlan-big-874x492.jpg" alt="" width="100%">
 </body>
 {% endblock%}
+
 <style>
     h1{
         text-align: center;
